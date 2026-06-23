@@ -99,6 +99,11 @@
         padding-bottom:8px; scroll-snap-type:x mandatory;
       }
       .service-card { width:75vw !important; flex-shrink:0; scroll-snap-align:start; }
+      .reviews-grid {
+        display:flex !important; overflow-x:auto; gap:20px;
+        padding-bottom:8px; scroll-snap-type:x mandatory;
+      }
+      .review-card { width:80vw !important; flex-shrink:0; scroll-snap-align:start; }
       .gallery-grid { display:flex !important; overflow-x:auto; gap:12px; }
       .gallery-item { width:78vw !important; flex-shrink:0; }
       .footer-grid { grid-template-columns: 1fr !important; }
@@ -136,8 +141,8 @@
           text-decoration:none;">FAQ</a>
       </nav>
       <div style="margin-left:16px;">
-        <a href="tel:+33619894071" style="display:flex; align-items:center; gap:8px;
-          padding:10px 20px; font-size:13px; font-weight:600;
+        <a href="tel:+33619894071" style="display:flex; align-items:center; justify-content:center; gap:8px;
+          padding:10px 20px; font-size:13px; font-weight:600; text-align:center;
           background-color:var(--color-primary); color:var(--color-secondary);
           border-radius:var(--button-radius); text-decoration:none;">
           Demander un devis gratuit
@@ -419,8 +424,8 @@ Rapide à un bon prix. Appelez-nous pour un devis gratuit ou par mail, perfect-e
         </span>
       </div>
     </div>
-    <div style="margin-top:48px; display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
-      <div style="border-radius:12px;
+    <div class="reviews-grid" style="margin-top:48px; display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
+      <div class="review-card" style="border-radius:12px;
         border:1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
         padding:24px; background-color:var(--color-bg);">
         <div style="display:flex; align-items:center; gap:12px;">
@@ -446,7 +451,7 @@ Rapide à un bon prix. Appelez-nous pour un devis gratuit ou par mail, perfect-e
           &laquo; Sylvain, pour lequel j'avais signé le devis, a eu un problème de santé, mais a, à ma demande, trouvé un collaborateur pour effectuer le travail sous sa surveillance. Très professionnel. &raquo;
         </p>
       </div>
-      <div style="border-radius:12px;
+      <div class="review-card" style="border-radius:12px;
         border:1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
         padding:24px; background-color:var(--color-bg);">
         <div style="display:flex; align-items:center; gap:12px;">
@@ -469,10 +474,10 @@ Rapide à un bon prix. Appelez-nous pour un devis gratuit ou par mail, perfect-e
         </div>
         <p style="margin-top:16px; font-size:14px; line-height:1.6;
           color:color-mix(in srgb, var(--color-text) 65%, transparent);">
-          &laquo; J'ai fait appel aux services de Perfect'Eau pour résoudre un problème de pression d'eau et pour changer un radiateur défaillant. Sylvain est un professionnel sérieux et compétent. &raquo;
+          &laquo; J'ai fait appel aux services de Perfect'Eau pour résoudre un problème de pression d'eau et changer un radiateur défaillant. Sylvain est un professionnel sérieux, compétent et très à l'écoute. &raquo;
         </p>
       </div>
-      <div style="border-radius:12px;
+      <div class="review-card" style="border-radius:12px;
         border:1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
         padding:24px; background-color:var(--color-bg);">
         <div style="display:flex; align-items:center; gap:12px;">
@@ -495,7 +500,7 @@ Rapide à un bon prix. Appelez-nous pour un devis gratuit ou par mail, perfect-e
         </div>
         <p style="margin-top:16px; font-size:14px; line-height:1.6;
           color:color-mix(in srgb, var(--color-text) 65%, transparent);">
-          &laquo; Super plombier autant efficace que professionnel ! À contacter pour tous vos soucis de plomberie, beaucoup de méthode et de savoir-faire avec un rendu des travaux impeccable. &raquo;
+          &laquo; Super plombier, autant efficace que professionnel ! À contacter pour tous vos soucis de plomberie : beaucoup de méthode et de savoir-faire, avec un rendu des travaux vraiment impeccable. Je recommande. &raquo;
         </p>
       </div>
     </div>
